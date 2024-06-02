@@ -10,43 +10,43 @@
   <div id="pagina-1">
     <h1>Vamos calcular o seu IMC?</h1>
     <div id="personagens">
-      <img id="homem" width="370" alt="Desenho de um Homem" src="assets/masculino-vinte-anos.svg">
-      <img id="mulher" width="370" alt="Desenho de uma Mulher" src="assets/feminino-vinte-anos.svg">
+      <img id="homem" draggable="false" width="370" height="700" alt="Desenho de um Homem" src="assets/masculino-vinte-anos.svg">
+      <img id="mulher" draggable="false" width="370" height="700" alt="Desenho de uma Mulher" src="assets/feminino-vinte-anos.svg">
     </div>
   </div>
   <div id="pagina-2">
     <h1>Qual a sua idade?</h1>
     <div id="idade">
-      <img id="homem-idade" width="370" alt="Desenho de um Homem" src="assets/masculino-vinte-anos.svg">
+      <img id="homem-idade" draggable="false" width="370" alt="Desenho de um Homem" src="assets/masculino-vinte-anos.svg">
       <div id="info-idade">
         <h2 id="texto-idade">1</h2>
         <input type="range" min="1" max="100" value="1" id="slider-idade">
         <button type="button" id="botao-idade">Confirmar</button>
       </div>
-      <img id="mulher-idade" width="370" alt="Desenho de uma Mulher" src="assets/feminino-vinte-anos.svg">
+      <img id="mulher-idade" draggable="false" width="370" alt="Desenho de uma Mulher" src="assets/feminino-vinte-anos.svg">
     </div>
   </div>
   <div id="pagina-3">
     <h1>Qual a sua altura?</h1>
     <input type="range" min="30" max="300" value="0" id="slider-altura">
     <button type="button" id="botao-altura">Confirmar</button>
-    <img id="desenho-escala" width="800" height="700" alt="Desenho de um médico medindo" src="assets/altura.svg">
-    <img id="personagem-altura" height="500" alt="Desenho de uma pessoa sendo medida" src="assets/masculino-vinte-anos.svg">
+    <img draggable="false" id="desenho-escala" width="800" height="700" alt="Desenho de um médico medindo" src="assets/altura.svg">
+    <img draggable="false" id="personagem-altura" height="500" alt="Desenho de uma pessoa sendo medida" src="assets/masculino-vinte-anos.svg">
     <h2 id="valor-altura">0.30m</h2>
   </div>
   <div id="pagina-4">
     <h1>Qual o seu peso?</h1>
     <input type="text" maxlength="5" value="" placeholder="digite aqui" id="input-peso">
     <button type="button" id="botao-peso">Confirmar</button>
-    <img id="desenho-balanca" width="1000" height="700" alt="Desenho de uma balança" src="assets/balanca.svg">
+    <img draggable="false" id="desenho-balanca" width="1000" height="700" alt="Desenho de uma balança" src="assets/balanca.svg">
     <h2 id="valor-peso">0.00</h2>
   </div>
   <div id="pagina-5">
     <h1>Seu resultado</h1>
     <h2 id="valor-final">Valor aqui</h2>
-    <img id="carregando" width="800" height="600" alt="Animação de carregamento" src="assets/carregando.gif">
-    <img id="resultado-imc" width="950" height="620" alt="Tabela de índices do IMC" src="assets/resultado-IMC.svg">
-    <img id="agulha-indice" width="61" height="203" alt="Agulha de indicação do índice IMC" src="assets/agulha-indice.svg">
+    <img draggable="false" id="carregando" width="800" height="600" alt="Animação de carregamento" src="assets/carregando.gif">
+    <img draggable="false" id="resultado-imc" width="950" height="620" alt="Tabela de índices do IMC" src="assets/resultado-IMC.svg">
+    <img draggable="false" id="agulha-indice" width="61" height="203" alt="Agulha de indicação do índice IMC" src="assets/agulha-indice.svg">
   </div>
   <script src="https://unpkg.com/imask"></script>
   <script src="script.js"></script>

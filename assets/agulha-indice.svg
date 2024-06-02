@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 203" width="61" height="203">
+	<title>Novo Projeto</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-202.667,59.671,0,30.192,203)">
+			<stop offset="0" stop-color="#252525"/>
+			<stop offset="1" stop-color="#3f3f3f"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="Camada 4" class="s0" d="m31 203c19 0 30.6-15.1 28.9-31.4-5.2-47.3-17.9-136-23.3-165.2-0.9-4.5-5.8-6.1-8.6-6.1-2.8 0-8 1.7-8.6 6.2-3.1 25.1-13.7 119.8-18.9 165.6-1.8 16.4 10.8 30.9 30.5 30.9z"/>
+</svg>

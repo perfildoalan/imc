@@ -1,10 +1,10 @@
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 620" width="950" height="620">
-	<title>IMC RESULTADO (1)-svg</title>
+	<title>resultado-IMC-svg</title>
 	<defs>
 		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-406.538,-341.126,253.658,-302.298,442.394,485.339)">
-			<stop offset="0" stop-color="#00789b"/>
-			<stop offset=".5" stop-color="#00b3e7"/>
-			<stop offset="1" stop-color="#00c4fd"/>
+			<stop offset="0" stop-color="#510082"/>
+			<stop offset=".5" stop-color="#8a0bdf"/>
+			<stop offset="1" stop-color="#8a0bdf"/>
 		</linearGradient>
 		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-222.899,-478.008,361.116,-168.391,421.074,482.977)">
 			<stop offset="0" stop-color="#009b1a"/>

@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+@font-face{
+ font-family:'DS-DIGI';
+ src: url('assets/DS-DIGI.TTF');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100vw;
+  background-color: #205d67;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  justify-content: center;
+  transition: background-color 1s;
+}
+
+h1 {
+  color: #58aebb;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding-top: 5vh;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h2 {
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 5vh;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#pagina-1 {
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
+}
+
+#personagens {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  min-width: 340px;
+  max-width: 700px;
+}
+
+#homem {
+  transform: scale(1.0);
+  transition: all 1s;
+  opacity: 0.8;
+}
+
+#mulher {
+  transform: scale(1.0);
+  transition: all 1s;
+  opacity: 0.8;
+}
+
+#homem:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
+}
+
+#mulher:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.2));
+}
+
+#pagina-2 {
+  height: 0;
+  width: 0;
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#idade {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  max-width: 500px;
+}
+
+#info-idade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  min-width: 170px;
+  max-width: 300px;
+}
+
+#texto-idade {
+  font-size: 40px;
+}
+
+#slider-idade {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  background-color: #347939;
+  border-color: #639a67;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#slider-idade:hover {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  background-color: #347939;
+  border-color: #639a67;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#slider-idade::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #639a67;
+  cursor: pointer;
+}
+
+#slider-idade::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #639a67;
+  cursor: pointer;
+}
+
+#botao-idade {
+  background-color: #347939;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  padding: 7px 20px;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#botao-idade:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.10);
+}
+
+
+#homem-idade {
+  transform: scale(1.0);
+  transition: all 1s;
+  opacity: 0.8;
+  width: 100%;
+  min-width: 122px;
+  max-width: 600px;
+}
+
+#mulher-idade {
+  transform: scale(1.0);
+  transition: all 1s;
+  opacity: 0.8;
+  width: 100%;
+  min-width: 122px;
+  max-width: 600px;
+}
+
+#pagina-3 {
+  height: 0;
+  width: 0;
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#slider-altura {
+  -webkit-appearance: none;
+  max-width: 15vw;
+  min-width: 200px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  display: block;
+  z-index: 1;
+  height: 25px;
+  padding: 5px;
+  background-color: #8ea465;
+  border-color: #d8ebb5;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#slider-altura:hover {
+  -webkit-appearance: none;
+  max-width: 15vw;
+  min-width: 200px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  display: block;
+  height: 25px;
+  padding: 5px;
+  background-color: #8ea465;
+  border-color: #d8ebb5;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#slider-altura::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d8ebb5;
+  cursor: pointer;
+}
+
+#slider-altura::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d8ebb5;
+  cursor: pointer;
+}
+
+#botao-altura {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin: auto;
+  background-color: #a4b97d;
+  border-radius: 100px;
+  box-shadow: rgba(97, 121, 53, .2) 0 -25px 18px -14px inset,rgba(97, 121, 53, .15) 0 1px 2px,rgba(97, 121, 53, .15) 0 2px 4px,rgba(97, 121, 53, .15) 0 4px 8px,rgba(97, 121, 53, .15) 0 8px 16px,rgba(97, 121, 53, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  padding: 7px 20px;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#botao-altura:hover {
+  box-shadow: rgb(97, 121, 53,.35) 0 -25px 18px -14px inset,rgba(97, 121, 53,.25) 0 1px 2px,rgba(97, 121, 53,.25) 0 2px 4px,rgba(97, 121, 53,.25) 0 4px 8px,rgba(97, 121, 53,.25) 0 8px 16px,rgba(97, 121, 53,.25) 0 16px 32px;
+  transform: scale(1.10);
+}
+
+@media only screen and (min-width: 48em) {
+  #desenho-escala {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+    transition: all 1s;
+  }
+
+  #personagem-altura {
+    width: 300px;
+    height: 430px;
+    margin: auto;
+    position: relative;
+    bottom: 515px;
+    display: block;
+    transition: all 1s;
+  }
+
+  #valor-altura {
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: 180px;
+    bottom: 920px;
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #desenho-escala {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    display: block;
+    transition: all 1s;
+  }
+
+  #personagem-altura {
+    width: 160px;
+    height: 280px;
+    margin: auto;
+    position: relative;
+    bottom: 320px;
+    display: block;
+    transition: all 1s;
+  }
+  #valor-altura {
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    bottom: 590px;
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  #desenho-escala {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    display: block;
+    transition: all 1s;
+  }
+
+  #personagem-altura {
+    width: 80px;
+    height: 140px;
+    margin: auto;
+    position: relative;
+    bottom: 115px;
+    display: block;
+    transition: all 1s;
+  }
+  #valor-altura {
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: 60px;
+    bottom: 250px;
+    transition: all 1s;
+  }
+}
+
+#pagina-4 {
+  height: 0;
+  width: 0;
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#input-peso {
+  -webkit-appearance: none;
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  max-width: 15vw;
+  min-width: 200px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  display: block;
+  z-index: 1;
+  height: 25px;
+  padding: 5px;
+  background-color: #675522;
+  border-color: #d9bf77;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#input-peso:hover {
+  -webkit-appearance: none;
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  max-width: 15vw;
+  min-width: 200px;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  display: block;
+  height: 25px;
+  padding: 5px;
+  background-color: #675522;
+  border-color: #d9bf77;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  border-radius: 30px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: opacity .5s;
+}
+
+#input-peso::placeholder {
+  color: white;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  opacity: 0.2;
+}
+
+#input-peso::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d9bf77;
+  cursor: pointer;
+}
+
+#input-peso::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #d9bf77;
+  cursor: pointer;
+}
+
+#botao-peso {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin: auto;
+  background-color: #6d5105;
+  border-radius: 100px;
+  box-shadow: rgb(86, 58, 11, .2) 0 -25px 18px -14px inset,rgba(86, 58, 11, .15) 0 1px 2px,rgba(86, 58, 11, .15) 0 2px 4px,rgba(86, 58, 11, .15) 0 4px 8px,rgba(86, 58, 11, .15) 0 8px 16px,rgba(86, 58, 11, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 200;
+  padding: 7px 20px;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#botao-peso:hover {
+  box-shadow: rgba(86, 58, 11,.35) 0 -25px 18px -14px inset,rgba(86, 58, 11,.25) 0 1px 2px,rgba(86, 58, 11,.25) 0 2px 4px,rgba(86, 58, 11,.25) 0 4px 8px,rgba(86, 58, 11,.25) 0 8px 16px,rgba(86, 58, 11,.25) 0 16px 32px;
+  transform: scale(1.10);
+}
+
+@media only screen and (min-width: 48em) {
+  #desenho-balanca {
+    width: 650px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+    transition: all 1s;
+  }
+  #valor-peso {
+    color: black;
+    font-family: "DS-DIGI";
+    font-size: 38px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: -15px;
+    bottom: 392px;
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #desenho-balanca {
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top: 27px;
+    display: block;
+    transition: all 1s;
+  }
+  #valor-peso {
+    color: black;
+    font-family: "DS-DIGI";
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: -9px;
+    bottom: 245px;
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  #desenho-balanca {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    display: block;
+    transition: all 1s;
+  }
+  #valor-peso {
+    color: black;
+    font-family: "DS-DIGI";
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    left: -5px;
+    bottom: 81px;
+    transition: all 1s;
+  }
+}
+
+#pagina-5 {
+  height: 0;
+  width: 0;
+  transition: all 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#valor-final {
+  color: #063756;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 48em) {
+  #carregando {
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+  }
+  #resultado-imc {
+    width: 665px;
+    height: 434px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+    transition: all 1s;
+  }
+  #agulha-indice {
+    width: 42.7px;
+    height: 142.1px;
+    margin: auto;
+    position: relative;
+    top: -240px;
+    display: block;
+    transform-origin: 50% 90%;
+    transform: rotateZ(-98deg);
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #carregando {
+    width: 350px;
+    height: 263px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    display: block;
+  }
+  #resultado-imc {
+    width: 465px;
+    height: 303px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+    transition: all 1s;
+  }
+  #agulha-indice {
+    width: 29.8px;
+    height: 99.4px;
+    margin: auto;
+    position: relative;
+    top: -165px;
+    display: block;
+    transform-origin: 50% 90%;
+    transform: rotateZ(-98deg);
+    transition: all 1s;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  #carregando {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    display: block;
+  }
+  #resultado-imc {
+    width: 325px;
+    height: 212px;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    display: block;
+    transition: all 1s;
+  }
+  #agulha-indice {
+    width: 20.8px;
+    height: 69.5px;
+    margin: auto;
+    position: relative;
+    top: -110px;
+    display: block;
+    transform-origin: 50% 90%;
+    transform: rotateZ(-98deg);
+    transition: all 1s;
+  }
+}
